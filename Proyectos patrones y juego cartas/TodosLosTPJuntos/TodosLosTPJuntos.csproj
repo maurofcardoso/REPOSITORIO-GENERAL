@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{FD34C1F1-A462-4EA7-AD4B-09C30CC3EA53}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>TodosLosTPJuntos</RootNamespace>
+    <AssemblyName>TodosLosTPJuntos</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CAdaptador.cs" />
+    <Compile Include="CAdicionalAsteriscos.cs" />
+    <Compile Include="CAdicionalDecorado.cs" />
+    <Compile Include="CAdicionalLegajo.cs" />
+    <Compile Include="CAdicionalNotaLetras.cs" />
+    <Compile Include="CAdicionalPromocion.cs" />
+    <Compile Include="CAlumno.cs" />
+    <Compile Include="CAlumnoCompuesto.cs" />
+    <Compile Include="CAlumnoMuyEstudioso.cs" />
+    <Compile Include="CAlumnoProxy.cs" />
+    <Compile Include="CAula.cs" />
+    <Compile Include="CCola.cs" />
+    <Compile Include="CColeccionMultiple.cs" />
+    <Compile Include="CComparaApellido.cs" />
+    <Compile Include="CComparaBonus.cs" />
+    <Compile Include="CComparaClave.cs" />
+    <Compile Include="CComparaDni.cs" />
+    <Compile Include="CComparaLegajo.cs" />
+    <Compile Include="CComparaNombre.cs" />
+    <Compile Include="CComparaNumero.cs" />
+    <Compile Include="CComparaPromedio.cs" />
+    <Compile Include="CConjunto.cs" />
+    <Compile Include="CDiccionario.cs" />
+    <Compile Include="CFabricaDeAlumnoCompuesto.cs" />
+    <Compile Include="CFabricaDeAlumnos.cs" />
+    <Compile Include="CFabricaDeAlumnosMuyEstudiosos.cs" />
+    <Compile Include="CFabricaDeAlumnosProxy.cs" />
+    <Compile Include="CFabricaDeComparables.cs" />
+    <Compile Include="CFabricaDeNumeros.cs" />
+    <Compile Include="CFabricaDeVendedores.cs" />
+    <Compile Include="CGeneradorDeDatosAleatorios.cs" />
+    <Compile Include="CGerente.cs" />
+    <Compile Include="CIteradorCola.cs" />
+    <Compile Include="CIteradorConjunto.cs" />
+    <Compile Include="CIteradorDiccionario.cs" />
+    <Compile Include="CIteradorPila.cs" />
+    <Compile Include="CJuegoCartas.cs" />
+    <Compile Include="CJuegoTruco.cs" />
+    <Compile Include="CLectorDeDatos.cs" />
+    <Compile Include="CNumero.cs" />
+    <Compile Include="CObjetoClaveValor.cs" />
+    <Compile Include="COrdenAulaLlena.cs" />
+    <Compile Include="COrdenInicio.cs" />
+    <Compile Include="COrdenLlegaAlumno.cs" />
+    <Compile Include="CPersona.cs" />
+    <Compile Include="CPila.cs" />
+    <Compile Include="CVendedor.cs" />
+    <Compile Include="IAlumno.cs" />
+    <Compile Include="IColeccionable.cs" />
+    <Compile Include="IComoComparar.cs" />
+    <Compile Include="IComparable.cs" />
+    <Compile Include="IFabricaDeComparables.cs" />
+    <Compile Include="IIterable.cs" />
+    <Compile Include="IIterador.cs" />
+    <Compile Include="IObservado.cs" />
+    <Compile Include="IObservador.cs" />
+    <Compile Include="IOrdenable.cs" />
+    <Compile Include="IOrdenEnAula1.cs" />
+    <Compile Include="IOrdenEnAula2.cs" />
+    <Compile Include="MDPI.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

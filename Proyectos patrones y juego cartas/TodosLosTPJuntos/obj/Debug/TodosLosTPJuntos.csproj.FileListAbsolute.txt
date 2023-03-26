@@ -1,0 +1,6 @@
+C:\Users\Usuario\Downloads\METODOLOGIA\TodosLosTPJuntos\TodosLosTPJuntos\bin\Debug\TodosLosTPJuntos.exe.config
+C:\Users\Usuario\Downloads\METODOLOGIA\TodosLosTPJuntos\TodosLosTPJuntos\bin\Debug\TodosLosTPJuntos.exe
+C:\Users\Usuario\Downloads\METODOLOGIA\TodosLosTPJuntos\TodosLosTPJuntos\bin\Debug\TodosLosTPJuntos.pdb
+C:\Users\Usuario\Downloads\METODOLOGIA\TodosLosTPJuntos\TodosLosTPJuntos\obj\Debug\TodosLosTPJuntos.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Downloads\METODOLOGIA\TodosLosTPJuntos\TodosLosTPJuntos\obj\Debug\TodosLosTPJuntos.exe
+C:\Users\Usuario\Downloads\METODOLOGIA\TodosLosTPJuntos\TodosLosTPJuntos\obj\Debug\TodosLosTPJuntos.pdb

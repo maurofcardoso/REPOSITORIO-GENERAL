@@ -1,0 +1,48 @@
+14:36:11, jueves, 7 de julio de 2022: Unhandled exception - a MessageNotUnderstood('String does not understand #getUbicacion')
+
+String(Object)>>doesNotUnderstand:
+Remiseria>>cargarDatosIniciarViajeRemiseria
+UndefinedObject>>{unbound}doIt
+CompiledExpression>>value:
+SmalltalkWorkspace>>evaluateRange:ifFail:debug:
+SmalltalkWorkspace>>evaluateItIfFail:debug:
+SmalltalkWorkspace>>evaluateItIfFail:
+SmalltalkWorkspace>>inspectIt
+Symbol>>forwardTo:
+CommandDescription>>performAgainst:
+[] in Command>>value
+BlockClosure>>ifCurtailed:
+BlockClosure>>ensure:
+Command>>value
+ShellView>>performCommand:
+SmalltalkWorkspaceDocument(Shell)>>performCommand:
+CommandQuery>>perform
+DelegatingCommandPolicy(CommandPolicy)>>route:
+[] in ScintillaView(View)>>onCommand:
+BlockClosure>>ifCurtailed:
+----------------------------------------------------------------------------------------------------
+
+13:52:52, martes, 12 de julio de 2022: Unhandled exception - a BoundsError('Index 0 is out of bounds')
+
+OrderedCollection(Object)>>errorSubscriptBounds:
+OrderedCollection>>at:
+OrderedCollection(SequenceableCollection)>>last
+Remiseria>>verSiguienteTurnoRemiseria
+UndefinedObject>>{unbound}doIt
+CompiledExpression>>value:
+SmalltalkWorkspace>>evaluateRange:ifFail:debug:
+SmalltalkWorkspace>>evaluateItIfFail:debug:
+SmalltalkWorkspace>>evaluateItIfFail:
+SmalltalkWorkspace>>inspectIt
+Symbol>>forwardTo:
+CommandDescription>>performAgainst:
+[] in Command>>value
+BlockClosure>>ifCurtailed:
+BlockClosure>>ensure:
+Command>>value
+ShellView>>performCommand:
+SmalltalkWorkspaceDocument(Shell)>>performCommand:
+CommandQuery>>perform
+DelegatingCommandPolicy(CommandPolicy)>>route:
+----------------------------------------------------------------------------------------------------
+
