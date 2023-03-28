@@ -1,0 +1,105 @@
+#ordenComplet {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#subDiv1 {
+    width: 100%;
+    display: flex;
+    margin-top: 0;
+}
+
+#subDiv2 {
+    width: 100%;
+    display: flex;
+}
+
+#subDiv3 {
+    width: 100%;
+    display: flex;
+}
+
+.ordenCompra {
+    width: 100%;
+    background-color: var(--Color3);
+    color: var(--Color1);
+    border-bottom: solid 1px var(--Color1);
+}
+.ordenCompra h1{
+    text-align: center;
+}
+
+.ordenCompra h2 {
+    text-align: start;
+    font-size: 20px;
+}
+
+#listOrden {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background-color: var(--Color3);
+}
+
+.cuerpo img {
+    height: 80%;
+    width: 80%;
+}
+
+.pie{
+    border-radius:0 0 15px 15px;
+    text-align:start;
+}
+
+.pie a{
+    text-decoration: none;
+    color: var(--Color1);
+    background-color: var(--Color4);
+}
+
+.pie h1, h2, h3 {
+    color: var(--Color1);
+    font-size: 10px;
+}
+
+.product{
+    display:flex;
+    flex-flow: column wrap;
+    border: 0.01rem solid var(--Color1);
+    border-radius:15px;
+    background-color: var(--Color3);
+    margin-top: 1rem;
+}
+
+
+#productInfo {
+    display: flex;
+    flex-flow: column wrap;
+    width: 30%;
+}
+
+#cuerpoInfo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.imgInfo {
+    justify-content:flex-start;
+    align-items: flex-start;
+    text-align: start;
+    width: 30%;
+}
+
+.info {
+    width: 70%;
+}
+
+.detailProduct {
+    width: 100%;
+    height: 50%;
+}

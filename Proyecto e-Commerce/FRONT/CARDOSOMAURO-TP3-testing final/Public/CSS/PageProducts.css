@@ -1,0 +1,136 @@
+#listProduct {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-around;
+    background-color: var(--Color3);
+}
+
+#listProduct > a :hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.product{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    width:200px;
+    height: 280px;
+    border: 0.01rem solid var(--Color1);
+    box-shadow: 2px 2px 8px 4px var(--Color1);
+    border-radius:15px;
+    background-color: var(--Color3);
+    margin-bottom: 2rem;
+}
+
+.titulo{
+    font-size: 14px;
+    padding: 10px 10px 0 10px;
+    text-align: center;
+    color: var(--Color1);
+    background-color: var(--Color2);
+    border-radius: 15px 15px 0 0;
+}
+
+.cuerpo{
+    padding: 10px;
+}
+
+.cuerpo img {
+    height: 100%;
+    width: 100%;
+}
+
+.pie{
+    border-radius:0 0 15px 15px;
+    padding: 10px;
+    text-align:center;
+}
+
+.pie a{
+    text-decoration: none;
+    color: var(--Color1);
+    background-color: var(--Color4);
+}
+
+.pie h1, h2, h3 {
+    color: var(--Color1);
+}
+
+#addButton {
+    background-color: var(--Color1);
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+#addButton :hover{
+    color: var(--Color3);
+    filter: none;
+}
+
+#inputCarrito {
+    width: 30%;
+    height: 2rem;
+    border-radius: 8px;
+    margin-left: 30px 0px 0px 30px;
+    background-color: var(--Color3);
+    color: var(--Color6);
+    font-size: 25px;
+}
+
+#inputCarrito ::placeholder {
+    margin-left: 3rem;
+}
+
+#carrito {
+    border-top: solid var(--Color5);
+    padding: 1rem;
+}
+
+#productInfo {
+    display: flex;
+    flex-flow: column;
+    margin-left: 2rem;
+    width: 80%;
+    height: 80%;
+}
+
+#tituloInfo {
+    width: 100%;
+    height: 3rem;
+}
+
+#cuerpoInfo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.imgInfo {
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    border-right: 0.1px solid var(--Color1);
+}
+
+.info {
+    width: 50%;
+    height: 100%;
+}
+
+.detailProduct {
+    width: 100%;
+    height: 50%;
+}
+
+.buttons {
+    width: 100%;
+    height: 50%;
+}

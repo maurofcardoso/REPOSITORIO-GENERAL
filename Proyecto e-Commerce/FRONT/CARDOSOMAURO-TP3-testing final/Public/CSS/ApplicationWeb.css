@@ -1,0 +1,477 @@
+* { 
+    box-sizing: border-box; 
+    padding: 0; 
+    margin: 0;
+} 
+
+:root{
+    --Color1:#706f6f;
+    --Color2:#c6c6c6;
+    --Color3:#ffffff;
+	--Color4: #d2daed;
+	--errorColor:#CF6679;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--Color3);
+}
+
+#ApplicationWeb {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+#info {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100vw;
+    height: 40px;
+    background-color: var(--Color4);
+    color: var(--Color1);
+    position:fixed;
+}
+
+#info > span {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+}
+
+#info > div {
+    border: solid 1px var(--Color3);
+    margin-left: 1rem;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+}
+
+#info > h3 {
+    margin-left: 5px;
+}
+
+#search {
+    display: flex;
+    width: 100vw;
+    height: 80px;
+    background-color: var(--Color3);
+    margin-top: 40px;
+    position:fixed;
+}
+
+#header {
+    width: 100vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: var(--Color1);
+    margin: 0rem 0.5rem 0rem 0.5rem;
+}
+
+.logotipo {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-right: 0.5rem;
+}
+
+.logotipo > img {
+    border-radius: 40px;
+    width: 50px;
+    height: 50px;
+}
+
+.logoText {
+    letter-spacing: 5px;
+    font-family:'Courier New', Courier, monospace;
+    color: var(--Color1);
+}
+
+#searchProducts {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+#searchProduct{
+    font-size:20px;
+    color: var(--Color1);
+    background:transparent;
+    line-height:0.5rem;
+    border-radius: 10px;
+    border: solid 1px var(--Color1);
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+::placeholder {
+    color: var(--Color1);
+    font-size: 1rem;
+    padding-left: 2rem;
+    text-align: calc(center - 1rem);
+}
+
+#checkOut {
+    accent-color: var(--Color1);
+}
+
+#menu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center; 
+    align-items:center;
+    text-align: center;
+    width: 100vw;
+    height: 40px;
+    background-color: var(--Color2);
+    margin-top: 120px;
+    position:fixed;
+
+}
+
+.menu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center; 
+    align-items:center;
+    text-align: center;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.active {
+    color: red;
+}
+
+ul { 
+    list-style-type: none; 
+} 
+
+li {
+    margin: 0rem 1rem 0rem 1rem;
+}
+
+a { 
+    font-size: 1rem;
+    color: var(--Color1);
+    text-decoration:none; 
+    letter-spacing: 2px;
+} 
+
+a:hover { 
+    text-decoration: none; 
+} 
+
+ul :hover a {
+    color: var(--Color3);
+}
+
+#errorH1 {
+    color: var(--Color1);
+}
+
+#main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    margin-top: 160px;
+}
+
+#bannerIzq {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content:flex-start; 
+    align-items:center;
+    text-align: center;
+    width: 20%;
+    margin-top: 3rem;
+}
+
+.bannerIzq {
+    border-radius: 15px;
+    position: fixed;
+}
+
+.bannerIzq h1 {
+    color: var(--Color1);
+    margin-bottom: 3rem;
+    text-align: center;
+    animation: move linear 4000ms infinite;
+    z-index: 2
+}
+
+.medioPago {
+    width: 90%;
+    height: 90%;
+    border-radius: 15px;
+    margin-bottom: 3rem;
+}
+
+.cajera {
+    width: 90%;
+    height: 90%;
+    border-radius: 15px;
+}
+
+#center {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:flex-start; 
+    align-items:center;
+    text-align: center;
+    width: 60%;
+    margin-top: 3rem;
+}
+
+#bannerDer {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content:flex-start; 
+    align-items:center;
+    text-align: center;
+    width: 20%;
+    margin-top: 3rem;
+}
+
+.banDer {
+    /* width: 100%; */
+    position: fixed;
+}
+
+.banDer h2 {
+    font-size: 20px;
+}
+
+.informacion {
+    color: var(--Color1);
+    border-radius: 10px;
+    border: 1px solid var(--Color1);
+    align-items:center;
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#marcasImg {
+    width: 80%;
+    margin: 5rem 0rem 5rem 0rem;
+}
+
+.window-notice {
+    background: rgba(33, 41, 52, .85);
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    position: fixed;
+    z-index: 999;
+}
+
+.window-notice .content {
+    background: var(--Color3);
+    color: var(--Color1);
+    border-radius: 20px;
+    box-shadow: 0 1px 3px rgba(33, 41, 52, .75);
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    max-width: 600px;
+    min-width: 320px !important;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.3rem;
+}
+
+.content-text {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.content-text > a {
+    color: var(--Color1);
+}
+
+.content-text > a:hover{
+    color: var(--Color2)
+}
+
+.footer-maurito {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--Color2);
+}
+
+footer {
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@keyframes move {
+    0% {
+        text-shadow:
+        4px -4px 0 var(--Color4),
+        3px -3px 0 var(--Color4),
+        2px -2px 0 var(--Color4),
+        1px -1px 0 var(--Color4),
+        -4px 4px 0 var(--Color2),
+        -3px 3px 0 var(--Color2),
+        -2px 2px 0 var(--Color2),
+        -1px 1px 0 var(--Color2);
+    }
+    25% {
+        text-shadow:
+        -4px -4px 0 var(--Color2),
+        -3px -3px 0 var(--Color2),
+        -2px -2px 0 var(--Color2),
+        -1px -1px 0 var(--Color2),
+        4px 4px 0 var(--Color4),
+        3px 3px 0 var(--Color4),
+        2px 2px 0 var(--Color4),
+        1px 1px 0 var(--Color4);
+    }
+    50% {
+        text-shadow:
+        4px -4px 0 var(--Color4),
+        3px -3px 0 var(--Color4),
+        2px -2px 0 var(--Color4),
+        1px -1px 0 var(--Color4),
+        -4px 4px 0 var(--Color2),
+        -3px 3px 0 var(--Color2),
+        -2px 2px 0 var(--Color2),
+        -1px 1px 0 var(--Color2);
+    }
+    75% {
+        text-shadow:
+        -4px -4px 0 var(--Color2),
+        -3px -3px 0 var(--Color2),
+        -2px -2px 0 var(--Color2),
+        -1px -1px 0 var(--Color2),
+        4px 4px 0 var(--Color4),
+        3px 3px 0 var(--Color4),
+        2px 2px 0 var(--Color4),
+        1px 1px 0 var(--Color4);
+    }
+    100% {
+        text-shadow:
+        4px -4px 0 var(--Color4),
+        3px -3px 0 var(--Color4),
+        2px -2px 0 var(--Color4),
+        1px -1px 0 var(--Color4),
+        -4px 4px 0 var(--Color2),
+        -3px 3px 0 var(--Color2),
+        -2px 2px 0 var(--Color2),
+        -1px 1px 0 var(--Color2);
+    }
+}
+
+@media (max-width: 600px) {
+    #info {
+        display: flex;
+        flex-flow: row nowrap;
+        height: 50px;
+    }
+
+    #info > span {
+        margin-right: 0rem;
+        font-size: 1rem;
+    }
+    
+    #info > div {
+        border: solid 0.5px var(--Color3);
+        margin-left: 0rem;
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+    }
+    
+    #info > h3 {
+        margin-left: 2px;
+    }
+
+    #search {
+        display: flex;
+        width: 100vw;
+        height: 80px;
+        background-color: var(--Color3);
+        margin-top: 50px;
+        position:fixed;
+    }
+
+    #menu {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content:center; 
+        align-items:center;
+        text-align: center;
+        width: 100vw;
+        height: 40px;
+        background-color: var(--Color2);
+        margin-top: 180px;
+        position:fixed;
+    }
+
+    #bannerIzq {
+        display: none;
+    }
+
+    #bannerDer {
+        display: none;
+    }
+
+    #center {
+        margin-top: 5rem;
+    }
+}
+
+@media (max-width: 968px) {
+    #menu {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content:center; 
+        align-items:center;
+        text-align: center;
+        width: 100vw;
+        height: 40px;
+        background-color: var(--Color2);
+        margin-top: 180px;
+        position:fixed;
+    }
+
+    #bannerIzq {
+        display: none;
+    }
+
+    #bannerDer {
+        display: none;
+    }
+
+    #center {
+        margin-top: 5rem;
+    }
+}

@@ -1,0 +1,175 @@
+#searchProducts {
+    display: none;
+}
+
+#CarritoComplet {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#subDiv1 {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 10rem;
+}
+
+#subDiv2 {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    height: 100%;
+}
+
+#listCarrito {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-around;
+    margin-top: 1rem;
+}
+
+.carrito{
+    display:flex;
+    flex-flow: column;
+    justify-content:space-between;
+    width:40%;
+    height: 15rem;
+    border: 0.01rem solid var(--Color1);
+    box-shadow: 2px 2px 8px 4px var(--Color1);
+    border-radius:15px;
+    margin-bottom: 1.5rem;
+}
+
+.titulo{
+    font-size: 10px;
+    padding: 10px 10px 0 10px;
+    text-align: center;
+    color: var(--Color1);
+    background-color: var(--Color2);
+    border-radius: 15px 15px 0 0;
+}
+
+.infoFoto {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.cuerpo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cuerpo img {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.pie{
+    width: 80%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius:0 0 15px 15px;
+}
+
+.pie h1, h2, h3 {
+    font-size: 15px;
+    color: var(--Color1);
+}
+
+#deleteButton {
+    background-color: red;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    filter: drop-shadow(0 0 0.3rem var(--Color6));
+    cursor: pointer;
+}
+
+#deleteButton :hover{
+    color: var(--Color6);
+    filter: none;
+}
+
+#inputCarrito {
+    width: 20%;
+    height: 2rem;
+    border-radius: 8px;
+    margin-left: 30px 0px 0px 30px;
+    background-color: var(--Color3);
+    color: var(--Color6);
+    font-size: 25px;
+}
+
+.carritoForm {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+#comprar {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.btn-flotante {
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: var(--Color3);
+	border-radius: 1rem;
+	letter-spacing: 2px;
+	background-color: var(--Color1);
+	padding: 18px 30px;
+	transition: all 300ms ease 0ms;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-flotante:hover {
+	background-color: var(--Color6);
+    color: var(--Color1);
+	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+	transform: translateY(-7px);
+}
+
+@media only screen and (max-width: 600px) {
+.btn-flotante {
+		font-size: 12px;
+		padding: 5px 15px;
+		bottom: 20px;
+		right: 20px;
+	}
+}
+
+.infoClient {
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    border-bottom: 0.01px solid var(--Color1);
+}
+
+.infoClient > h1 {
+    color: var(--Color1);
+}
+
+.totales{
+    display: flex;
+    flex-flow: column wrap;
+    color: var(--Color2);
+    align-items: flex-start;
+    text-align: start;
+}
+

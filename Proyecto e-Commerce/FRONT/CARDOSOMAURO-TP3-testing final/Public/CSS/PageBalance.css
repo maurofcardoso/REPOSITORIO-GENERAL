@@ -1,0 +1,242 @@
+#searchProducts {
+    display: none;
+}
+
+#BalanceComplet {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#subDiv1 {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#subDiv2 {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: 0;
+}
+
+#formBusqueda {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    border-bottom: 1px solid var(--Color1);
+    padding: 2rem;
+}
+
+.busqueda {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+#formBusqueda > h1 {
+    color: var(--Color1);
+}
+
+.busqueda > label {
+    font-size: 15px;
+    padding: 1rem;
+    color: var(--Color1)
+}
+
+.busqueda > input {
+    font-size: 15px;
+    color: var(--Color1);
+    border-radius: 1rem;
+    border-color: var(--Color1);
+    border-width: 1px;
+    padding: 0.5rem;
+    margin-right: 4rem;
+}
+
+#buttonBuscarOrden {
+    width: 4rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    background-color: var(--Color2);
+    color: var(--Color1);
+    border-color: var(--Color1);
+    box-shadow: 1px 1px 4px 2px var(--Color1);
+}
+
+#buttonBuscarOrden:hover { 
+    background: var(--Color1); 
+    color: var(--Color2)
+} 
+
+#buttonBuscarOrden:active { 
+    padding: 10px; 
+} 
+
+#listBalance {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 2rem;
+}
+
+#infoBalance {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--Color1);
+    margin-bottom: 3rem;
+    border-bottom: 1px solid var(--Color1);
+}
+
+#infoh2 {
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: start;
+    font-size: 10px;
+}
+
+#infoBalanceProducts {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.ventaBalance {
+    width: 20%;
+    display: flex;
+    flex-flow: column wrap;
+    border: 0.5px solid var(--Color1);
+    border-radius: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--Color1);
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+#ventaBalance h2, h3 {
+    font-size: 15px;
+}
+
+#infoBalanceProducts :hover {
+    background-color: var(--Color2);
+    color: var(--Color3);
+}
+
+#infoVentaBalance {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.ordenBalance {
+    width: 100%;
+    background-color: var(--Color3);
+    color: var(--Color1);
+    border-bottom: solid 1px var(--Color1);
+}
+
+.ordenBalance h1{
+    text-align: center;
+}
+
+.ordenBalance h2 {
+    text-align: start;
+    font-size: 20px;
+}
+
+.product{
+    display:flex;
+    flex-flow: column wrap;
+    border: 0.01rem solid var(--Color1);
+    border-radius:15px;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+#productInfo {
+    display: flex;
+    flex-flow: column wrap;
+    width: 30%;
+}
+
+.cuerpo img {
+    height: 80%;
+    width: 80%;
+}
+
+#cuerpoInfo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.imgInfo {
+    justify-content:flex-start;
+    align-items: flex-start;
+    text-align: start;
+    width: 30%;
+}
+
+.info {
+    width: 70%;
+}
+
+.detailProduct {
+    width: 100%;
+    height: 50%;
+}
+
+.pie{
+    border-radius:0 0 15px 15px;
+    text-align:start;
+}
+
+#contenidoPie h2 {
+    color: var(--Color1);
+    font-size: 10px;
+}
+
+#contenidoPie h3 {
+    color: var(--Color1);
+    font-size: 10px;
+}
+
+#buttonVolver {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.buttonVolver {
+    color: var(--Color1);
+    background-color: var(--Color2);
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: var(--Color3);
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.buttonVolver:hover {
+    background-color: var(--Color3);
+    color: var(--Color1);
+    border: solid 1px var(--Color1);
+}

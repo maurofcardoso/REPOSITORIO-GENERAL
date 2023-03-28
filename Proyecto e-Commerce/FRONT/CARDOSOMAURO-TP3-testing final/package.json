@@ -1,0 +1,15 @@
+{
+  "name": "reentregatp3",
+  "version": "1.0.0",
+  "description": "correcciones visuales",
+  "main": "PageProducts.js",
+  "scripts": {
+    "start": "nodemon ApplicationWeb.js"
+  },
+  "author": "cardoso mauro",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  }
+}

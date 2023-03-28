@@ -1,0 +1,35 @@
+#searchProducts {
+    display: none;
+}
+
+#contacto {
+    width: 100%;
+    padding: 3rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#contacto > p {
+    font-size:x-large;
+    margin-bottom: 2rem;
+    letter-spacing: 3px;
+    color: var(--Color1);
+}
+
+#contacto > ul {
+    color: var(--Color1);
+}
+
+#contacto > ul > a {
+    color: var(--Color1);
+    font-style: oblique;
+}
+
+#contacto > ul > li > a:hover {
+    color: var(--Color1);
+    color: var(--Color2);
+    font-style: oblique;
+}

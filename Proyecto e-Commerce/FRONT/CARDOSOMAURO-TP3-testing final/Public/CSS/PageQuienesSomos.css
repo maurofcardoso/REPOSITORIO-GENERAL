@@ -1,0 +1,26 @@
+#searchProducts {
+    display: none;
+}
+
+#quienesSomos {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+}
+
+#subDiv1 {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 2rem;
+}
+
+#subDiv2 {
+    display: flex;
+    justify-content: center;
+    opacity: 0.7;
+}
+
+.quienesSomosText {
+    color: var(--Color1);
+    font-family:cursive;
+}
