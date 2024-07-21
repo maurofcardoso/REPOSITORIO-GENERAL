@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Domain.Entities
+{
+    public class TicketBody
+    {
+        public int idTicketBody { get; set; }
+        public string title { get; set; }
+        public string description { get; set; }
+        public string file { get; set; }
+
+        public Ticket ticket { get; set; }
+    }
+}

@@ -1,0 +1,64 @@
+.card {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--surfaceColor);	
+	border-radius: 1rem;
+	padding: 2rem;	
+	cursor: pointer;
+	gap:1rem;
+	align-items: flex-start;
+	letter-spacing: 0.1rem;
+}
+
+.card.chosen{
+    transform: scale(1.02) rotate(-1deg);
+    box-shadow: 0ox 0px 20px rgba(149, 153, 159, .16);
+	background: var(--surfaceHoverColor)
+}
+
+.card:hover{
+	background: var(--surfaceHoverColor);
+}
+
+.card.baja{
+	border-left: 1rem solid #03DAC6;
+}
+
+.card.alta{
+	border-left: 1rem solid var(--errorColor);
+}
+
+.card.media{
+	border-left: 1rem solid #fbe739;
+}
+
+.card .tag{
+	background: var(--primaryColor);
+	padding: 1rem;
+	border-radius: 0.5rem;
+	color:var(--backgroundColor);
+	font-weight: 700;
+	font-size: 1.1rem;
+}
+
+.card .priority{
+	position: absolute;
+	right: 2rem;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	color:var(--backgroundColor);
+	font-weight: 700;
+	font-size: 1.1rem;
+}
+
+
+.card .alta{background: var(--errorColor);}
+.card .baja{background: #03DAC6 ;}
+.card .media{background: #fbe739;}
+
+
+
+
+@media screen and (max-width: 780px) {
+
+}

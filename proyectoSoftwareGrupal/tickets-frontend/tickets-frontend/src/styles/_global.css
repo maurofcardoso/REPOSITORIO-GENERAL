@@ -1,0 +1,133 @@
+:root{
+    --primaryColor:#BB86FC;
+    --secundaryColor:#03DAC6;
+    --terciaryColor:#01ABAA;
+	--surfaceColor: #1d1d1d;
+	--surfaceHoverColor:#353535;
+    --backgroundColor:#121212;
+	--errorColor:#CF6679;
+    --primaryFont:  'Roboto', sans-serif;    
+    --headerHeight: 8rem;
+	--headerMT: 2rem;
+	--asideM: 2rem;
+    --asideWidth: 18rem;
+	--headerColor: var(--surfaceColor);
+	--asideColor: var(--surfaceColor);
+}
+
+html{
+    box-sizing: border-box; 
+    font-size: 62.5%; /* hack 1rem = 10px */
+    font-family: var(--primaryFont); 
+	color:#fff;
+}
+
+*, *:before, *:after{
+    box-sizing:inherit; 
+    margin: 0;
+    padding: 0;
+}
+
+.overflow-ellipsis {
+	text-overflow: ellipsis;
+}
+
+button {
+	all: unset;
+	font-family: var(--primaryFont);
+}
+
+select{
+	background-color: transparent;
+	color:var(--primaryColor);
+	border: 1px solid var(--primaryColor);
+	padding: 0.5rem;
+	border-radius: 0.8rem;
+	
+	font-size: 1.5rem;
+}
+
+input {
+	all: unset;
+	background: #e4d6f4;
+	font-size: 1.3rem;
+	padding: 0.5rem;
+	border-radius: 1rem;
+	font-weight: 800;
+    filter: drop-shadow(0 0 0.3rem var(--primaryColor));
+	height: 2.5rem;	
+	width: 30rem;
+	font-family: var(--primaryFont);
+	padding-left: 1rem;
+	color:#000;
+}
+
+textarea {
+	border-radius: 1rem;
+	width: 100%;
+	padding: 1rem;
+}
+
+a {
+	text-decoration: none;
+	font-family: 'Victor Mono';
+	color: inherit;
+}
+
+h1{
+	font-size: 2.4rem;
+	color: var(--primaryColor); 
+}
+
+h2{
+	font-size: 1.8rem;
+}
+
+h3{
+	font-size: 1.5rem;
+}
+
+h4{
+	font-size: 1.2rem;
+}
+
+p{
+	font-size: 1.2rem;
+}
+
+
+button.btn{
+    margin-left: auto;
+    background-color: var(--primaryColor);
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    filter: drop-shadow(0 0 0.3rem var(--primaryColor));
+    cursor: pointer;
+}
+
+button.secundary{
+	background-color: transparent!important;
+	border: 1px solid var(--primaryColor);
+}
+
+/* Modifico scroll*/
+
+*::-webkit-scrollbar {
+	width: 8px;
+}
+
+/* Track */
+*::-webkit-scrollbar-track {
+	background: #e8e6f2;
+}
+
+/* Handle */
+*::-webkit-scrollbar-thumb {
+	background: var(--primaryColor);
+}
+
+/* Handle on hover */
+*::-webkit-scrollbar-thumb:hover {
+	background: var(--secundaryColor);
+}

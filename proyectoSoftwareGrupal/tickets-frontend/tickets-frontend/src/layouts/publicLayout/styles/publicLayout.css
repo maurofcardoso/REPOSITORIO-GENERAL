@@ -1,0 +1,7 @@
+#publicLayout{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--backgroundColor);
+    height: 100vh;    
+}

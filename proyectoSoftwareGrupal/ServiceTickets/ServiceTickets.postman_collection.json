@@ -1,0 +1,689 @@
+{
+	"info": {
+		"_postman_id": "eecdf451-b30e-40e1-966d-43eaafac7930",
+		"name": "ServiceTickets",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13703513"
+	},
+	"item": [
+		{
+			"name": "Ticket",
+			"item": [
+				{
+					"name": "Create Ticket",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI0IiwidW5pcXVlX25hbWUiOiJhbmdlbHNvc2EiLCJlbWFpbCI6ImFuZ2Vsc29sYUBnbWFpbC5jb20iLCJyb2xlIjoiMiIsImdlbmRlciI6IjIiLCJhY3RvcnQiOiIzIiwibmJmIjoxNjY4NzEwMjEyLCJleHAiOjE2NjkzMTUwMTIsImlhdCI6MTY2ODcxMDIxMn0.ng9yZAN1-EeNWk2ZAUz5onyAFIcnfAQpjVjJbuYvGz9AjrSMX5xJNX7vMsh8A6LrfbEXI44oEScsh0nEy1y52w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"PriorityId\": 1,\r\n  \"CategoryId\": 3,\r\n  \"title\": \"Titulo del ticket\",\r\n  \"description\": \"Descripcion del ticket\",\r\n  \"fileAdjunt\": \"url\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{urlHost}}/api/Tickets",
+							"host": [
+								"{{urlHost}}"
+							],
+							"path": [
+								"api",
+								"Tickets"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetTicketAll",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIzIiwidW5pcXVlX25hbWUiOiJmcmFuY29nb21leiIsImVtYWlsIjoiZnJhbmNvZ29tZXpAZ21haWwuY29tIiwicm9sZSI6IjMiLCJnZW5kZXIiOiIzIiwiYWN0b3J0IjoiMiIsIm5iZiI6MTY2ODczMTk3MCwiZXhwIjoxNjY5MzM2NzcwLCJpYXQiOjE2Njg3MzE5NzB9.WDfGU2_b-9IjtoNaKVVPzIA0U7zcq4LN1zDC2jigprZZmUqBe-wOaAnERn9qRSYwXpskxXXqsPKamG3nP-wuvw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{urlHost}}/api/tickets",
+							"host": [
+								"{{urlHost}}"
+							],
+							"path": [
+								"api",
+								"tickets"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetTicket By Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI0IiwidW5pcXVlX25hbWUiOiJhbmdlbHNvc2EiLCJlbWFpbCI6ImFuZ2Vsc29sYUBnbWFpbC5jb20iLCJyb2xlIjoiMiIsImdlbmRlciI6IjIiLCJhY3RvcnQiOiIzIiwibmJmIjoxNjY4NzE1ODM0LCJleHAiOjE2NjkzMjA2MzQsImlhdCI6MTY2ODcxNTgzNH0.P6XM0Q4g55h1L8BPWd8sOqumtgcfqLr5M4VMMh35SAZKGwTDBBcF1wN0BG3-JWSmB016KioYhirUAmcpRgDm_w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{urlHost}}/api/tickets/:id",
+							"host": [
+								"{{urlHost}}"
+							],
+							"path": [
+								"api",
+								"tickets",
+								":id"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateStatus",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIzIiwidW5pcXVlX25hbWUiOiJmcmFuY29nb21leiIsImVtYWlsIjoiZnJhbmNvZ29tZXpAZ21haWwuY29tIiwicm9sZSI6IjMiLCJnZW5kZXIiOiIzIiwiYWN0b3J0IjoiMiIsIm5iZiI6MTY2ODczMTk3MCwiZXhwIjoxNjY5MzM2NzcwLCJpYXQiOjE2Njg3MzE5NzB9.WDfGU2_b-9IjtoNaKVVPzIA0U7zcq4LN1zDC2jigprZZmUqBe-wOaAnERn9qRSYwXpskxXXqsPKamG3nP-wuvw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"idTicket\": 2,\r\n  \"StatusId\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{urlHost}}/api/Tickets",
+							"host": [
+								"{{urlHost}}"
+							],
+							"path": [
+								"api",
+								"Tickets"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateCategory",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIzIiwidW5pcXVlX25hbWUiOiJmcmFuY29nb21leiIsImVtYWlsIjoiZnJhbmNvZ29tZXpAZ21haWwuY29tIiwicm9sZSI6IjMiLCJnZW5kZXIiOiIzIiwiYWN0b3J0IjoiMiIsIm5iZiI6MTY2ODczMTk3MCwiZXhwIjoxNjY5MzM2NzcwLCJpYXQiOjE2Njg3MzE5NzB9.WDfGU2_b-9IjtoNaKVVPzIA0U7zcq4LN1zDC2jigprZZmUqBe-wOaAnERn9qRSYwXpskxXXqsPKamG3nP-wuvw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n  \"CategoryId\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{urlHost}}/api/tickets/:id",
+							"host": [
+								"{{urlHost}}"
+							],
+							"path": [
+								"api",
+								"tickets",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TicketComent",
+			"item": [
+				{
+					"name": "UpdateTicketComment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIyIiwidW5pcXVlX25hbWUiOiJqdWFucGVyZXoiLCJlbWFpbCI6Imp1YW5wZXJlekBnbWFpbC5jb20iLCJyb2xlIjoiMiIsImdlbmRlciI6IjIiLCJhY3RvcnQiOiIyIiwibmJmIjoxNjY4NzM3OTYyLCJleHAiOjE2NjkzNDI3NjIsImlhdCI6MTY2ODczNzk2Mn0.MzHME6DWdTqTQTIiLcFgO2FEuEAmHMvwPRi9XG-MlT-VoMuWBEp3XrQFPLf5rO8bemcFi5X8UEjOJ71UlpoPSw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"comment\": \"string\",\r\n  \"file\": \"string\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{urlHost}}/api/ticketComment?id=5",
+							"host": [
+								"{{urlHost}}"
+							],
+							"path": [
+								"api",
+								"ticketComment"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateTicketComent",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIyIiwidW5pcXVlX25hbWUiOiJqdWFucGVyZXoiLCJlbWFpbCI6Imp1YW5wZXJlekBnbWFpbC5jb20iLCJyb2xlIjoiMiIsImdlbmRlciI6IjIiLCJhY3RvcnQiOiIyIiwibmJmIjoxNjY4NzM3OTYyLCJleHAiOjE2NjkzNDI3NjIsImlhdCI6MTY2ODczNzk2Mn0.MzHME6DWdTqTQTIiLcFgO2FEuEAmHMvwPRi9XG-MlT-VoMuWBEp3XrQFPLf5rO8bemcFi5X8UEjOJ71UlpoPSw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"idTicket\": 3,\r\n  \"comment\": \"comentario1\",\r\n  \"file\": \"url\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{urlHost}}/api/TicketComment",
+							"host": [
+								"{{urlHost}}"
+							],
+							"path": [
+								"api",
+								"TicketComment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetTicketCommentByTicket",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIyIiwidW5pcXVlX25hbWUiOiJqdWFucGVyZXoiLCJlbWFpbCI6Imp1YW5wZXJlekBnbWFpbC5jb20iLCJyb2xlIjoiMiIsImdlbmRlciI6IjIiLCJhY3RvcnQiOiIyIiwibmJmIjoxNjY4NzM4ODIyLCJleHAiOjE2NjkzNDM2MjIsImlhdCI6MTY2ODczODgyMn0.SLjHmVXVCA6YazvR6BEhon4JF3WQ91HdroK5zH5xnoLFX-3tOlZdn2g3rHKyqsqj6DKc83Ck__UcD_KUof2noQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"idTicket\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{urlHost}}/api/TicketComment",
+							"host": [
+								"{{urlHost}}"
+							],
+							"path": [
+								"api",
+								"TicketComment"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete TicketComment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIyIiwidW5pcXVlX25hbWUiOiJqdWFucGVyZXoiLCJlbWFpbCI6Imp1YW5wZXJlekBnbWFpbC5jb20iLCJyb2xlIjoiMiIsImdlbmRlciI6IjIiLCJhY3RvcnQiOiIyIiwibmJmIjoxNjY4NzM4ODIyLCJleHAiOjE2NjkzNDM2MjIsImlhdCI6MTY2ODczODgyMn0.SLjHmVXVCA6YazvR6BEhon4JF3WQ91HdroK5zH5xnoLFX-3tOlZdn2g3rHKyqsqj6DKc83Ck__UcD_KUof2noQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{urlHost}}/api/TicketComment/?id=4",
+							"host": [
+								"{{urlHost}}"
+							],
+							"path": [
+								"api",
+								"TicketComment",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TicketCategory",
+			"item": [
+				{
+					"name": "CreateTicketCategory",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwidW5pcXVlX25hbWUiOiJhZG1pbiIsImVtYWlsIjoicHNncnVwb2ludGVyQGdtYWlsLmNvbSIsInJvbGUiOiIxIiwiZ2VuZGVyIjoiMSwyLDMsNCw1IiwiYWN0b3J0IjoiMSIsIm5iZiI6MTY2ODc0NTE5OSwiZXhwIjoxNjY5MzQ5OTk5LCJpYXQiOjE2Njg3NDUxOTl9.WdNuOm8KTla_fmxq-cVjF6f_4yU1hWOviegF1ZTzN9dfWOO0jCFThvBuFQIw472V-y5WdcaYQWhAiGM_f4qaPg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"string\",\r\n  \"description\": \"string\",\r\n  \"reqApproval\": true,\r\n  \"minApprovers\": 0,\r\n  \"idAreadestino\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{urlHost}}/api/TicketCategory",
+							"host": [
+								"{{urlHost}}"
+							],
+							"path": [
+								"api",
+								"TicketCategory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateTicketCategory",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwidW5pcXVlX25hbWUiOiJhZG1pbiIsImVtYWlsIjoicHNncnVwb2ludGVyQGdtYWlsLmNvbSIsInJvbGUiOiIxIiwiZ2VuZGVyIjoiMSwyLDMsNCw1IiwiYWN0b3J0IjoiMSIsIm5iZiI6MTY2ODc0NTE5OSwiZXhwIjoxNjY5MzQ5OTk5LCJpYXQiOjE2Njg3NDUxOTl9.WdNuOm8KTla_fmxq-cVjF6f_4yU1hWOviegF1ZTzN9dfWOO0jCFThvBuFQIw472V-y5WdcaYQWhAiGM_f4qaPg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"string\",\r\n  \"description\": \"string\",\r\n  \"reqApproval\": true,\r\n  \"minApprovers\": 0,\r\n  \"idAreadestino\": 1,\r\n  \"active\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{urlHost}}/api/ticketCategory?id=4",
+							"host": [
+								"{{urlHost}}"
+							],
+							"path": [
+								"api",
+								"ticketCategory"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetTicketCategory",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwidW5pcXVlX25hbWUiOiJhZG1pbiIsImVtYWlsIjoicHNncnVwb2ludGVyQGdtYWlsLmNvbSIsInJvbGUiOiIxIiwiZ2VuZGVyIjoiMSwyLDMsNCw1IiwiYWN0b3J0IjoiMSIsIm5iZiI6MTY2ODc0NTE5OSwiZXhwIjoxNjY5MzQ5OTk5LCJpYXQiOjE2Njg3NDUxOTl9.WdNuOm8KTla_fmxq-cVjF6f_4yU1hWOviegF1ZTzN9dfWOO0jCFThvBuFQIw472V-y5WdcaYQWhAiGM_f4qaPg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{urlHost}}/api/TicketCategory",
+							"host": [
+								"{{urlHost}}"
+							],
+							"path": [
+								"api",
+								"TicketCategory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetTicketCategoryById",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwidW5pcXVlX25hbWUiOiJhZG1pbiIsImVtYWlsIjoicHNncnVwb2ludGVyQGdtYWlsLmNvbSIsInJvbGUiOiIxIiwiZ2VuZGVyIjoiMSwyLDMsNCw1IiwiYWN0b3J0IjoiMSIsIm5iZiI6MTY2ODc0NTE5OSwiZXhwIjoxNjY5MzQ5OTk5LCJpYXQiOjE2Njg3NDUxOTl9.WdNuOm8KTla_fmxq-cVjF6f_4yU1hWOviegF1ZTzN9dfWOO0jCFThvBuFQIw472V-y5WdcaYQWhAiGM_f4qaPg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{urlHost}}/api/TicketCategory/:id",
+							"host": [
+								"{{urlHost}}"
+							],
+							"path": [
+								"api",
+								"TicketCategory",
+								":id"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Area",
+			"item": [
+				{
+					"name": "CreateArea",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwidW5pcXVlX25hbWUiOiJhZG1pbiIsImVtYWlsIjoicHNncnVwb2ludGVyQGdtYWlsLmNvbSIsInJvbGUiOiIxIiwiZ2VuZGVyIjoiMSwyLDMsNCw1IiwiYWN0b3J0IjoiMSIsIm5iZiI6MTY2ODc0NTE5OSwiZXhwIjoxNjY5MzQ5OTk5LCJpYXQiOjE2Njg3NDUxOTl9.WdNuOm8KTla_fmxq-cVjF6f_4yU1hWOviegF1ZTzN9dfWOO0jCFThvBuFQIw472V-y5WdcaYQWhAiGM_f4qaPg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nameArea\": \"string\",\r\n  \"description\": \"string\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{urlHost}}/api/Area",
+							"host": [
+								"{{urlHost}}"
+							],
+							"path": [
+								"api",
+								"Area"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateArea",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{urlHost}}/api/area",
+							"host": [
+								"{{urlHost}}"
+							],
+							"path": [
+								"api",
+								"area"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAreaAll",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwidW5pcXVlX25hbWUiOiJhZG1pbiIsImVtYWlsIjoicHNncnVwb2ludGVyQGdtYWlsLmNvbSIsInJvbGUiOiIxIiwiZ2VuZGVyIjoiMSwyLDMsNCw1IiwiYWN0b3J0IjoiMSIsIm5iZiI6MTY2ODc0NTE5OSwiZXhwIjoxNjY5MzQ5OTk5LCJpYXQiOjE2Njg3NDUxOTl9.WdNuOm8KTla_fmxq-cVjF6f_4yU1hWOviegF1ZTzN9dfWOO0jCFThvBuFQIw472V-y5WdcaYQWhAiGM_f4qaPg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{urlHost}}/api/Area",
+							"host": [
+								"{{urlHost}}"
+							],
+							"path": [
+								"api",
+								"Area"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateArea",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwidW5pcXVlX25hbWUiOiJhZG1pbiIsImVtYWlsIjoicHNncnVwb2ludGVyQGdtYWlsLmNvbSIsInJvbGUiOiIxIiwiZ2VuZGVyIjoiMSwyLDMsNCw1IiwiYWN0b3J0IjoiMSIsIm5iZiI6MTY2ODc0NTE5OSwiZXhwIjoxNjY5MzQ5OTk5LCJpYXQiOjE2Njg3NDUxOTl9.WdNuOm8KTla_fmxq-cVjF6f_4yU1hWOviegF1ZTzN9dfWOO0jCFThvBuFQIw472V-y5WdcaYQWhAiGM_f4qaPg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"activeArea\": false,\r\n  \"nameArea\": \"string\",\r\n  \"description\": \"string\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{urlHost}}/api/Area?id=4",
+							"host": [
+								"{{urlHost}}"
+							],
+							"path": [
+								"api",
+								"Area"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "urlHost",
+			"value": "https://localhost:7233"
+		}
+	]
+}

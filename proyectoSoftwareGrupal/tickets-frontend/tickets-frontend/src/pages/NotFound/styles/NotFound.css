@@ -1,0 +1,10 @@
+.notfound{
+    color: var(--primaryColor); 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.notfound h1{
+    font-size: 10rem;
+}

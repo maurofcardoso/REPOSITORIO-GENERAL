@@ -1,0 +1,65 @@
+.areas {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.areas .header{
+  display: flex;
+  justify-content: space-between;
+  padding-right: 2rem;
+  
+}
+
+.areas .header .tools{
+  display: flex;
+  gap:2rem;
+}
+
+.areas h1 {
+  padding-bottom: 2rem;
+}
+
+.areas span{
+  font-size: 1.2rem;
+}
+
+.ts .ticketStatus {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: transparent;
+  padding: 2rem 0;
+  border-radius: 1rem;
+  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+}
+
+
+.error{
+  font-size: 2rem;
+  color: brown;
+}
+
+.areas .table{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: var(--surfaceColor);
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));  
+}
+
+.areas .table-header{
+  color:var(--primaryColor);
+  font-size: 1.8rem;
+  padding-bottom: 1rem;
+  padding: 2rem;
+
+}
+
+.areas .table-item{  
+  border-top:3px solid var(--backgroundColor);
+  padding: 2rem;
+}

@@ -1,0 +1,19 @@
+.comment{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid var(--surfaceHoverColor);   
+    font-size: 1.2rem;
+}
+
+.comment p{
+   padding-bottom: 1rem;
+   font-size: 1.3rem;
+
+  }
+
+.comment cite{
+    margin-left: auto;
+    color:var(--primaryColor);
+    padding: 1rem;
+}

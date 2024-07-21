@@ -1,0 +1,35 @@
+#message {
+	display: flex;
+    justify-content: center;
+    align-items: flex-start;
+	padding: 3rem;
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	animation: fadeIn 1s;
+
+}
+
+#message .warn,
+#message .info {
+	margin: calc(var(--headerHeight) + var(--navHeight) + 10px) auto; /* 15% from the top and centered */
+	padding: 2rem;
+	width: 50%; /* Could be more or less, depending on screen size */
+	border-radius: 1rem;
+	filter: drop-shadow(0 0 0.75rem var(--terciaryColor));
+	font-size: 2rem;
+	color: #000;
+	font-weight: 500;
+}
+
+#message .warn {
+	background-color: var(--errorColor);
+}
+
+#message .info {
+	background-color: var(--terciaryColor);
+}

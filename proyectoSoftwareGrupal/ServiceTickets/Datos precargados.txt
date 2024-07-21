@@ -1,0 +1,63 @@
+MICROSERVICIO USUARIOS
+
+Permisos
+ID	NomnbrePermiso
+1	ABM usuarios
+2	AM Tickets
+3	resolucionTicket
+4	ABM Areas
+5	ABM TicketCategory
+
+Roles
+ID	NombreRol		Permisos
+1	Administrador 	1,2,3,4,5
+2	Usuario		2
+3	Agente		3,2
+
+Usuarios (pass: Inter7/)
+ID	Username		Rol	Area
+1	admin			1	1
+2	juanperez		2	2
+3	francogomez		3	2
+4	angelsosa		2	3
+5	candelagabriele	3	3
+
+JWT
+nameid 	=	UserID
+unique_name	=	Username
+email 	=	email
+role 		=	RolId
+gender	=	PermissionsID
+actort	=	AreaID
+
+
+
+
+
+MICROSERVICIO TICKETS
+
+TicketStatus
+new TicketStatus
+ID	STATUS
+1	Pendiente
+2	En curso
+3	Finalizado
+
+Prioritys
+ID	PRIORITY
+1	Baja
+2	Media
+3	Alta
+
+Areas
+ID	AREA
+1	Admin
+2	CompraVenta
+3	Soporte
+
+
+TicketCategory
+ID	TICKETCATEGORY
+1	Ventas
+2	Compras
+3	Reparacion hardware

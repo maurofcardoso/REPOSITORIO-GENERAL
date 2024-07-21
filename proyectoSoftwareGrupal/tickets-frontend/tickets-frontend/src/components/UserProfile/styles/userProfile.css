@@ -1,0 +1,29 @@
+.userProfile{
+    display: flex;
+    align-items:center;
+    gap:2rem;
+}
+
+.userProfile img{
+    width: 5rem;
+    height: 5rem;
+    object-fit:cover;
+    border-radius: 50%;
+    border:3px var(--secundaryColor) solid;    
+    cursor: pointer;
+}
+
+.userProfile .info
+{
+    color:#fff;
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+    font-size: 1.2rem;;
+}
+
+@media screen and (max-width: 780px) {   
+    .userProfile .info{
+        display: none;
+    }
+}

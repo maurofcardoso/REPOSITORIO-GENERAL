@@ -1,0 +1,26 @@
+.newComment{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap:2rem;
+  
+  background: var(--surfaceColor);
+  padding: 2rem;
+  border-radius: 1rem;
+  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+}
+
+
+.newComment button{
+    margin-left: auto;
+    background-color: var(--primaryColor);
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    filter: drop-shadow(0 0 0.3rem var(--primaryColor));
+    cursor: pointer;
+}
+
+.newComment button:hover{
+  filter:none;
+}
