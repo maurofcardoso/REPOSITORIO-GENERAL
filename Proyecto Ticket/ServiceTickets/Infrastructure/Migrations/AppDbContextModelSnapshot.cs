@@ -70,8 +70,8 @@ namespace Infrastructure.Migrations
                             idArea = 1,
                             activeArea = true,
                             createUser = 1,
-                            dateCreate = new DateTime(2022, 11, 17, 1, 2, 36, 258, DateTimeKind.Local).AddTicks(5879),
-                            dateUpdate = new DateTime(2022, 11, 17, 1, 2, 36, 258, DateTimeKind.Local).AddTicks(5897),
+                            dateCreate = new DateTime(2024, 7, 21, 21, 20, 14, 866, DateTimeKind.Local).AddTicks(2599),
+                            dateUpdate = new DateTime(2024, 7, 21, 21, 20, 14, 866, DateTimeKind.Local).AddTicks(2699),
                             description = "Area encargada de la administracion total del sistema",
                             nameArea = "Admin",
                             updateUser = 1
@@ -81,8 +81,8 @@ namespace Infrastructure.Migrations
                             idArea = 2,
                             activeArea = true,
                             createUser = 1,
-                            dateCreate = new DateTime(2022, 11, 17, 1, 2, 36, 258, DateTimeKind.Local).AddTicks(5899),
-                            dateUpdate = new DateTime(2022, 11, 17, 1, 2, 36, 258, DateTimeKind.Local).AddTicks(5900),
+                            dateCreate = new DateTime(2024, 7, 21, 21, 20, 14, 866, DateTimeKind.Local).AddTicks(2701),
+                            dateUpdate = new DateTime(2024, 7, 21, 21, 20, 14, 866, DateTimeKind.Local).AddTicks(2702),
                             description = "Area encargada de registrar y ejecutar las compras/ventas de la organización",
                             nameArea = "CompraVenta",
                             updateUser = 1
@@ -92,8 +92,8 @@ namespace Infrastructure.Migrations
                             idArea = 3,
                             activeArea = true,
                             createUser = 1,
-                            dateCreate = new DateTime(2022, 11, 17, 1, 2, 36, 258, DateTimeKind.Local).AddTicks(5902),
-                            dateUpdate = new DateTime(2022, 11, 17, 1, 2, 36, 258, DateTimeKind.Local).AddTicks(5903),
+                            dateCreate = new DateTime(2024, 7, 21, 21, 20, 14, 866, DateTimeKind.Local).AddTicks(2703),
+                            dateUpdate = new DateTime(2024, 7, 21, 21, 20, 14, 866, DateTimeKind.Local).AddTicks(2704),
                             description = "Area encargada del soporte tecnico de la organización",
                             nameArea = "Soporte",
                             updateUser = 1

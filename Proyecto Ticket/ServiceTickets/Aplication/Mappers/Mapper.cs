@@ -27,7 +27,7 @@ namespace Aplication.Mappers
             UserResponseJwt response = new UserResponseJwt
             {
                 UserId = Int32.Parse(tokenS.Claims.First(claim => claim.Type == "nameid").Value),
-                NameUser = tokenS.Claims.First(claim => claim.Type == "name").Value,
+                NameUser = tokenS.Claims.First(claim => claim.Type == "unique_name").Value,
                 Email = tokenS.Claims.First(claim => claim.Type == "email").Value,
                 RolId = Int32.Parse(tokenS.Claims.First(claim => claim.Type == "role").Value),
                 Permissions = tokenS.Claims.First(claim => claim.Type == "gender").Value.Split(',').ToList(),

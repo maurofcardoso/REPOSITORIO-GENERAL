@@ -5,10 +5,11 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Infrastructure.Migrations
 {
-    public partial class init : Migration
+    public partial class Init : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            //Add-Migration Init en infraestructura y Update-Database 
             migrationBuilder.CreateTable(
                 name: "Area",
                 columns: table => new
@@ -207,9 +208,9 @@ namespace Infrastructure.Migrations
                 columns: new[] { "idArea", "activeArea", "createUser", "dateCreate", "dateUpdate", "description", "nameArea", "updateUser" },
                 values: new object[,]
                 {
-                    { 1, true, 1, new DateTime(2022, 11, 17, 1, 2, 36, 258, DateTimeKind.Local).AddTicks(5879), new DateTime(2022, 11, 17, 1, 2, 36, 258, DateTimeKind.Local).AddTicks(5897), "Area encargada de la administracion total del sistema", "Admin", 1 },
-                    { 2, true, 1, new DateTime(2022, 11, 17, 1, 2, 36, 258, DateTimeKind.Local).AddTicks(5899), new DateTime(2022, 11, 17, 1, 2, 36, 258, DateTimeKind.Local).AddTicks(5900), "Area encargada de registrar y ejecutar las compras/ventas de la organización", "CompraVenta", 1 },
-                    { 3, true, 1, new DateTime(2022, 11, 17, 1, 2, 36, 258, DateTimeKind.Local).AddTicks(5902), new DateTime(2022, 11, 17, 1, 2, 36, 258, DateTimeKind.Local).AddTicks(5903), "Area encargada del soporte tecnico de la organización", "Soporte", 1 }
+                    { 1, true, 1, new DateTime(2024, 7, 21, 21, 20, 14, 866, DateTimeKind.Local).AddTicks(2599), new DateTime(2024, 7, 21, 21, 20, 14, 866, DateTimeKind.Local).AddTicks(2699), "Area encargada de la administracion total del sistema", "Admin", 1 },
+                    { 2, true, 1, new DateTime(2024, 7, 21, 21, 20, 14, 866, DateTimeKind.Local).AddTicks(2701), new DateTime(2024, 7, 21, 21, 20, 14, 866, DateTimeKind.Local).AddTicks(2702), "Area encargada de registrar y ejecutar las compras/ventas de la organización", "CompraVenta", 1 },
+                    { 3, true, 1, new DateTime(2024, 7, 21, 21, 20, 14, 866, DateTimeKind.Local).AddTicks(2703), new DateTime(2024, 7, 21, 21, 20, 14, 866, DateTimeKind.Local).AddTicks(2704), "Area encargada del soporte tecnico de la organización", "Soporte", 1 }
                 });
 
             migrationBuilder.InsertData(
